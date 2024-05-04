@@ -128,6 +128,7 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
 <p align="center">
   <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/top%20view.jpg" alt="Top View of the Project">
 </p>
+
 ### Standalone PCBA - Bottom View
 <p align="center">
   <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/bottom%20view.jpg" alt="Bottom View of the Project">
