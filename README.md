@@ -8,11 +8,12 @@
     * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
 
 ## 1. Video Presentation
-<div style="text-align:center;">
+<div align="center">
   <a href="https://www.youtube.com/watch?v=oSgTU4lZSk4">
-    <img src="https://img.youtube.com/vi/oSgTU4lZSk4/0.jpg" alt="Video Thumbnail">
+    <img src="https://img.youtube.com/vi/oSgTU4lZSk4/0.jpg" alt="Video Thumbnail" width="500">
   </a>
 </div>
+
 
 ## 2. Project Summary
 
