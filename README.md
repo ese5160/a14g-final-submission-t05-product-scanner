@@ -126,18 +126,38 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
   <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/top%20view.jpg" alt="Top View of the Project">
 </p>
 ### Standalone PCBA - Bottom View
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/bottom%20view.jpg" alt="Bottom View of the Project">
+</p>
 *Description: Bottom view of the standalone printed circuit board assembly (PCBA).*
 
 ### Thermal Camera Images
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/heat.jpg" alt="Thermal Image of the Project">
+</p>
 *Description: Thermal camera image showing the board while running under load. Useful for assessing thermal performance and hot spots.*
 
 ### Altium Board Design - 2D View
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Altium2D.png" alt="Altium 2D Design View">
+</p>
 *Description: Screenshot of the 2D view of the Altium board design, highlighting the layout and component placement.*
 
 ### Altium Board Design - 3D View
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Altium3D.png" alt="Altium 3D Design View">
+</p>
 *Description: Screenshot of the 3D view of the Altium board design, providing a realistic visualization of the assembled board.*
 
 ### Node-RED Dashboard
+<table><tr>
+<td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Login%20page.png" width="300"/></td>
+<td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Data%20page.png" width="300"/></td>
+</tr><tr>
+<td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/OTA%20reset.png" width="300"/></td>
+<td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Qr%20massage.png" width="300"/></td>
+</tr></table>
+
 *Description: Screenshot of the Node-RED dashboard, displaying the user interface and data visualization components.*
 
 ### Node-RED Backend
