@@ -31,6 +31,50 @@ The overall workflow of our product is as follows:
 3. The location information of the scanned items is also uploaded to the Node-RED UI interface, allowing access to this information via devices such as computers or smartphones.
 4. Finally, the SHTC3 sensor installed within our device continuously monitors the temperature and humidity of the supermarket. This information is uploaded to the Node-RED UI interface for display. Additionally, if the temperature exceeds a certain threshold or the humidity reaches a high level, a pop-up warning will appear on the page, alerting staff to adjust the air conditioning settings in that area.
 
+### Challenges
+In general, we faced four challenges and partly solved them in the right way.
+
+#### 1. LCD Configuration
+Our initial challenge stemmed from the SPI configuration for the LCD screen. Upon configuring the LCD, we encountered difficulty as the designated pin ports of the MCU couldn't be configured with SPI. This oversight likely occurred due to not verifying the configuration in Atmel Start during PCB design. Instead, we relied on the SPI line indicated on the MCU in the Altium schematic.
+Our resolution involved selecting alternative pins since the connector allocated for the LCD had eight pins, yet only six were utilized. Thus, we utilized the remaining two pins. Additionally, configuring the SPI pin port proved challenging as we deliberated over which SPI module and SERCOM to choose. Eventually, we consulted Microchip Studio's official website documentation and the SAMW25 datasheet to determine the appropriate configuration for the SPI module.
+
+#### 2. PCB Design Issues
+Our second challenge revolved around various schematic and PCB design issues encountered with our board. One such instance arose when designing the circuit to drive a vibrating motor. Initially, we replicated the typical design outlined in the motor's datasheet. However, upon testing, we discovered that this setup resulted in both ends of the motor being high when one should have been high and the other low. Ultimately, we rectified this by implementing the correct circuit externally to the PCB board.
+Another issue arose with certain pin ports that were unable to be driven, such as pulling them low or high. Despite theoretically being able to utilize all pins as GPIO, we encountered discrepancies where some pins responded as expected while others did not. We speculated that certain pin lines might be too lengthy, causing disconnections midway. Our workaround involved utilizing only those pins that functioned properly.
+
+#### 3. FreeRTOS Heap Task Size
+Our third challenge involved managing tasks with varying sizes and priorities, leading to mutual interference. Initially, when operating with only two tasks, they generally cooperated correctly but occasionally encountered issues like getting stuck. However, upon introducing a third task, inter-task interference became frequent, causing program malfunctions.
+To address this, we merged the two tasks into a single one, which effectively eliminated the encountered problems. Additionally, we implemented the high-water mark function to accurately measure the size of each task, ensuring their proper functioning.
+
+#### 4. QR Code Scanner Buffer Data Transmission - Node-RED + LCD Screen
+Our fourth challenge revolved around the data transmission issue of the QR code reader. We aimed to retrieve comprehensive product information, necessitating the output of a string of characters. However, we encountered difficulty in correctly writing the buffer to transmit this string, which consumed a significant amount of time in coding efforts. Eventually, through persistent troubleshooting, we successfully displayed the accurate product information on the LCD screen and the product location on the Node-RED website.
+
+### Prototype Learnings
+Reflecting on the process of building and testing our prototype, where we created and utilized our own PCB, several critical lessons emerged. First, the utility of test points was evident; they greatly facilitated troubleshooting and functional verification at various stages. When selecting pins, it is essential to ensure they align with the intended use and hardware compatibility, which is the most significant part of implementing PCB in the real project.
+
+Another important realization was the necessity of depopulating jumpers in the manufacturing stage to easily test the functionality of different modules. This practice helps in isolating problems and making incremental adjustments without impacting the entire system.
+
+The power system’s integrity proved to be crucial. Modifying standard components can lead to unexpected failures and malfunctions because the components are standard designed and cannot change the pin location.
+
+Lastly, while datasheets are invaluable resources, maintaining a healthy skepticism about the circuit configurations they suggest is beneficial. It's vital to validate each suggested configuration against practical application scenarios to ensure they meet the specific requirements of our project. If tasked with building this device again, these insights would guide us to optimize the design and testing phases to achieve a more robust and reliable outcome.
+
+### Next Steps
+In terms of hardware, our next step is to re-modify our own PCBA board and solve the previous wiring and connector problems so that the board will no longer have any physical errors and will be more convenient for subsequent use. At the same time, a module for communicating with the Internet is installed on the PCBA to improve the functionality of this product.
+
+At the software level, you can add a database stored in the cloud to save the customer's username and password, so that my node-red customer login interface can truly become a function that can be used to log in to secondary pages. At the same time, the information inside the QR code is also uploaded to the cloud. When the product is sold, the QR code information can be synchronized to update the remaining quantity of the product.
+
+### Takeaways from ESE5160
+What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
+1. The first and most important thing is to learn how to design PCBA boards through Altium, and know how to place components and correctly connect circuits.
+2. Learned how to test and debug hardware through oscilloscopes and other instruments, find circuit faults and find ways to solve them.
+3. Learned how to design a UI interface for your own product through node-red. Through node-red, I can try to think from the customer's perspective on how to design the UI interface to be more concise and easy to use.
+4. Learn how to write code correctly to ensure that various components have enough heap space to allow them to run in an orderly and continuous manner.
+
+### Project Links
+- **Node-RED instance:** [http://52.177.130.52:1880/ui](http://52.177.130.52:1880/ui)
+- **A12G Code Repository:** [GitHub Repository](https://github.com/ese5160/a12g-firmware-drivers-t05-product-scanner)
+- **Final PCBA on Altium 365:** [Altium 365 Link](https://upenn-eselabs.365.altium.com/designs/CA7AC7AB-A449-4488-9C62-C8DDCABF01EC)
+
 ## 3. Hardware & Software Requirements
 
 ## 4. Project Photos & Screenshots
