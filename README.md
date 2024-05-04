@@ -150,6 +150,7 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
 *Description: Screenshot of the 3D view of the Altium board design, providing a realistic visualization of the assembled board.*
 
 ### Node-RED Dashboard
+<div align="center">
 <table><tr>
 <td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Login%20page.png" width="300"/></td>
 <td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Data%20page.png" width="300"/></td>
@@ -157,7 +158,7 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
 <td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/OTA%20reset.png" width="300"/></td>
 <td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Qr%20massage.png" width="300"/></td>
 </tr></table>
-
+</div>
 *Description: Screenshot of the Node-RED dashboard, displaying the user interface and data visualization components.*
 
 ### Node-RED Backend
