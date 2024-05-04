@@ -4,7 +4,7 @@
     * Team Number: 5
     * Team Name: Pruduct Scanner
     * Team Members: Tianshu Wang & Jin Qian
-    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t05-product-scanner
+    * Github Repository URL: 
     * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
 
 ## 1. Video Presentation
