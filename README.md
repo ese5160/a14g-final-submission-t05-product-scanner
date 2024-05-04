@@ -111,6 +111,41 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
 
 
 ## 4. Project Photos & Screenshots
+
+### Final Project Photos and Screenshots
+
+### Final Project Overview
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/project%20whole%20view.jpg" alt="Project Whole View">
+</p>
+*Description: Image of the complete final project setup, showcasing all external components like 3D prints, screens, and buttons.*
+
+### Standalone PCBA - Top View
+*Description: Top view of the standalone printed circuit board assembly (PCBA).*
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/top%20view.jpg" alt="Top View of the Project">
+</p>
+### Standalone PCBA - Bottom View
+*Description: Bottom view of the standalone printed circuit board assembly (PCBA).*
+
+### Thermal Camera Images
+*Description: Thermal camera image showing the board while running under load. Useful for assessing thermal performance and hot spots.*
+
+### Altium Board Design - 2D View
+*Description: Screenshot of the 2D view of the Altium board design, highlighting the layout and component placement.*
+
+### Altium Board Design - 3D View
+*Description: Screenshot of the 3D view of the Altium board design, providing a realistic visualization of the assembled board.*
+
+### Node-RED Dashboard
+*Description: Screenshot of the Node-RED dashboard, displaying the user interface and data visualization components.*
+
+### Node-RED Backend
+*Description: Screenshot of the Node-RED backend, illustrating the flow and logic used to process data.*
+
+### System Block Diagram
+*Description: Updated block diagram of the system, reflecting changes and integration details from the semester.*
+
 ## 5. Project Codebase Links
 - **Node-RED instance:** [http://52.177.130.52:1880/ui](http://52.177.130.52:1880/ui)
 - **A12G Code Repository:** [GitHub Repository](https://github.com/ese5160/a12g-firmware-drivers-t05-product-scanner)
