@@ -77,4 +77,42 @@ What did you learn in ESE5160 through the lectures, assignments, and this course
 
 ## 3. Hardware & Software Requirements
 
+### Hardware Requirements
+
+#### HRS 01 - SAMW25 Microcontroller
+Our project is based on a self-designed PCB. The MCU of this PCB is the SAMW25 microcontroller, with J-link used to flash the code into the PCB.
+
+#### HRS 02 - SHTC3-TR-10KS Sensor
+In compliance with HRS 02, our system employs the SHTC3-TR-10KS sensor, which detects a wide range of temperature (-40 °C to 125 °C) and humidity (0 to 100 %RH). The typical accuracy is ±2 %RH for humidity and ±0.2°C for temperature, but our software configuration displays accuracy to ±1°C for temperature and ±1 %RH for humidity due to integer data type limitations.
+
+#### HRS 03 - 1.8" Color TFT LCD with SPI Interface
+The implementation of the 1.8" Color TFT LCD with an SPI interface in our project was crucial for displaying detailed product information. This LCD module communicates with the microcontroller through the SPI, ensuring swift and stable data updates.
+
+#### HRS 04 - Tiny Code Reader from Useful Sensors
+The Tiny Code Reader captures and interprets QR codes effectively, with an LED indicator that signals the scanning process status. It communicates with the microcontroller via I2C, changing from blue to green upon a successful scan.
+
+#### HRS 05 - ADA1201 Vibrating Motor
+The ADA1201 vibrating motor is integrated as a tactile feedback mechanism. It sends a vibration alert each time an item is scanned and when the user finishes shopping, enhancing the user experience with immediate physical feedback.
+
+#### HRS 06 - System Integration and Control
+Our development team has implemented a system that integrates multiple hardware components to ensure smooth and efficient operation. The device operates on a 3.7V Li-Ion battery, with a tested continuous operational capability of at least 3 hours.
+
+### Software Requirements
+
+#### SRS 01 - QR Code Scanning and Processing
+The Adafruit 5744 QR code reader scans QR codes on products with a response time of less than 2 seconds per scan. While the I2C protocol speed is assumed to be efficient, we lack tools to measure the exact speed, focusing on the operational performance.
+
+#### SRS 02 - Display Management
+We manage a 1.8" Color TFT LCD screen with an SPI interface, capable of displaying product details. Current performance shows a refresh time of approximately one to two seconds, slower than the desired 500 milliseconds.
+
+#### SRS 03 - Temperature and Humidity Monitoring
+The software interfaces with the SHTC3-TR-10KS sensor, collecting and transmitting temperature and humidity data every 5 seconds via MQTT to Node-RED for real-time monitoring and analysis.
+
+#### SRS 04 - Wireless Data Transmission
+Using the SAMW25 Wi-Fi microcontroller, our system handles data transmission over a 2.4 GHz Wi-Fi network, supporting 802.11 b/g/n standards with a minimum data transfer rate of 150 Mbps. It seamlessly connects to various networks and interfaces with different server configurations.
+
+#### SRS 05 - User Interaction and Feedback
+The ADA1201 vibrating motor is controlled by software to activate for 0.5 seconds for scan confirmations and alerts, with a slight delay in the vibration timing due to code issues but still delivering timely feedback.
+
+
 ## 4. Project Photos & Screenshots
