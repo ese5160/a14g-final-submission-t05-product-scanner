@@ -70,11 +70,6 @@ What did you learn in ESE5160 through the lectures, assignments, and this course
 3. Learned how to design a UI interface for your own product through node-red. Through node-red, I can try to think from the customer's perspective on how to design the UI interface to be more concise and easy to use.
 4. Learn how to write code correctly to ensure that various components have enough heap space to allow them to run in an orderly and continuous manner.
 
-### Project Links
-- **Node-RED instance:** [http://52.177.130.52:1880/ui](http://52.177.130.52:1880/ui)
-- **A12G Code Repository:** [GitHub Repository](https://github.com/ese5160/a12g-firmware-drivers-t05-product-scanner)
-- **Final PCBA on Altium 365:** [Altium 365 Link](https://upenn-eselabs.365.altium.com/designs/CA7AC7AB-A449-4488-9C62-C8DDCABF01EC)
-
 ## 3. Hardware & Software Requirements
 
 ### Hardware Requirements
@@ -116,3 +111,7 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
 
 
 ## 4. Project Photos & Screenshots
+## 5. Project Codebase Links
+- **Node-RED instance:** [http://52.177.130.52:1880/ui](http://52.177.130.52:1880/ui)
+- **A12G Code Repository:** [GitHub Repository](https://github.com/ese5160/a12g-firmware-drivers-t05-product-scanner)
+- **Final PCBA on Altium 365:** [Altium 365 Link](https://upenn-eselabs.365.altium.com/designs/CA7AC7AB-A449-4488-9C62-C8DDCABF01EC)
