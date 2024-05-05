@@ -177,6 +177,9 @@ The ADA1201 vibrating motor is controlled by software to activate for 0.5 second
 *Description: Screenshot of the Node-RED backend, illustrating the flow and logic used to process data.*
 
 ### System Block Diagram
+<p align="center">
+  <img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/System_diagram.png" alt="System Block Diagram">
+</p>
 *Description: Updated block diagram of the system, reflecting changes and integration details from the semester.*
 
 ## 5. Project Codebase Links
