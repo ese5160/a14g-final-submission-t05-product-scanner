@@ -4,8 +4,15 @@
     * Team Number: 5
     * Team Name: Pruduct Scanner
     * Team Members: Tianshu Wang & Jin Qian
-    * Github Repository URL: 
-    * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
+    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t05-product-scanner
+    * Github Pages URL: https://ese5160.github.io/a14g-final-submission-t05-product-scanner/
+    * Description of test hardware: 
+         SAMW25 Microcontroller
+         SHTC3-TR-10KS Sensor
+         1.8" Color TFT LCD with SPI Interface
+         Tiny Code Reader from Useful Sensors
+         ADA1201 Vibrating Motor
+         3.7V Li-Ion Battery
 
 ## 1. Video Presentation
 <div align="center">
